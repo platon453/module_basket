@@ -11,41 +11,62 @@
         <div class="container">
             <div class="header-top">
                 <div class="logo">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                        <path d="M8 8L32 32M32 8L8 32" stroke="#4ECDC4" stroke-width="3"/>
-                    </svg>
+                    <img src="img/Лого сайта.png" alt="Логотип">
                 </div>
-                <button class="ratings-btn">📊 Рейтинги</button>
+                <button class="ratings-btn">
+                    <img src="img/Рейтинги.png" alt="Рейтинги">
+                    Рейтинги
+                </button>
                 <div class="search-container">
                     <input type="text" placeholder="Что будем искать?" class="search-input">
-                    <button class="search-btn">🔍</button>
+                    <button class="search-btn">
+                        <img src="img/Искать.png" alt="Поиск">
+                    </button>
                 </div>
                 <div class="user-actions">
-                    <div class="user-item">
-                        <span class="icon">👤</span>
+                    <a href="#" class="user-item">
+                        <img src="img/Вход.png" alt="Вход">
                         <span>Вход</span>
-                    </div>
-                    <div class="user-item">
-                        <span class="icon">📱</span>
+                    </a>
+                    <a href="#" class="user-item">
+                        <img src="img/Начатые.png" alt="Начатые">
                         <span>Начатые</span>
-                    </div>
-                    <div class="user-item">
-                        <span class="icon">❤️</span>
+                    </a>
+                    <a href="#" class="user-item">
+                        <img src="img/Избранное.png" alt="Избранные">
                         <span>Избранные</span>
-                    </div>
-                    <div class="user-item active">
-                        <span class="icon">🛒</span>
+                    </a>
+                    <a href="#" class="user-item active">
+                        <img src="img/Корзина.png" alt="Корзина">
                         <span>Корзина</span>
-                    </div>
+                    </a>
                 </div>
             </div>
             <nav class="nav">
-                <a href="#" class="nav-item">📖 Читать онлайн</a>
-                <a href="#" class="nav-item">📚 Новые главы</a>
-                <a href="#" class="nav-item">❤️ Новые отзывы</a>
-                <a href="#" class="nav-item">📖 Книги в FB2</a>
-                <a href="#" class="nav-item">📚 Бесплатные книги</a>
-                <a href="#" class="nav-item">📝 Рецензии на книги</a>
+                <a href="#" class="nav-item">
+                    <img src="img/Читать онлайн.png" alt="">
+                    Читать онлайн
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="img/Новые главы.png" alt="">
+                    Новые главы
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="img/Новые отзывы.png" alt="">
+                    Новые отзывы
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="img/Книги в FB2.png" alt="">
+                    Книги в FB2
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="img/Бесплатные книги.png" alt="">
+                    Бесплатные книги
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="img/Рецензии на книги.png" alt="">
+                    Рецензии на книги
+                </a>
             </nav>
         </div>
     </header>
@@ -53,8 +74,13 @@
     <main class="main">
         <div class="container">
             <div class="cart-header">
-                <h1 class="page-title">КОРЗИНА <span class="item-count">2 товара</span></h1>
-                <button class="clear-cart">🗑️ Очистить корзину</button>
+                <div style="flex: 1;">
+                    <h1 class="page-title">КОРЗИНА <span class="item-count">2 товара</span></h1>
+                </div>
+                <button class="clear-cart" style="flex-shrink: 0; margin-left: 20px;">
+                    <img src="icons/delete.png" alt="Удалить">
+                    Очистить корзину
+                </button>
             </div>
 
             <div class="cart-content">
@@ -62,7 +88,7 @@
                     <h3>Товары в наличии</h3>
                     
                     <div class="cart-item">
-                        <img src="/placeholder.svg?height=120&width=80" alt="Дом,милый дом" class="book-cover">
+                        <img src="images/book1.png" alt="Дом,милый дом" class="book-cover">
                         <div class="item-details">
                             <h4>Дом,милый дом</h4>
                             <p class="author">Begemot</p>
@@ -87,7 +113,7 @@
                     </div>
 
                     <div class="cart-item">
-                        <img src="/placeholder.svg?height=120&width=80" alt="Шёпот шахт" class="book-cover">
+                        <img src="images/book2.png" alt="Шёпот шахт" class="book-cover">
                         <div class="item-details">
                             <h4>Шёпот шахт</h4>
                             <p class="author">Андрей винтер</p>
