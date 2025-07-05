@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Пустая</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M8 8L32 32M32 8L8 32" stroke="#4ECDC4" stroke-width="3"/>
+                    </svg>
+                </div>
+                <button class="ratings-btn">📊 Рейтинги</button>
+                <div class="search-container">
+                    <input type="text" placeholder="Что будем искать?" class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <div class="user-actions">
+                    <div class="user-item">
+                        <span class="icon">👤</span>
+                        <span>Вход</span>
+                    </div>
+                    <div class="user-item">
+                        <span class="icon">📱</span>
+                        <span>Начатые</span>
+                    </div>
+                    <div class="user-item">
+                        <span class="icon">❤️</span>
+                        <span>Избранные</span>
+                    </div>
+                    <div class="user-item active">
+                        <span class="icon">🛒</span>
+                        <span>Корзина</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-item">📖 Читать онлайн</a>
+                <a href="#" class="nav-item">📚 Новые главы</a>
+                <a href="#" class="nav-item">❤️ Новые отзывы</a>
+                <a href="#" class="nav-item">📖 Книги в FB2</a>
+                <a href="#" class="nav-item">📚 Бесплатные книги</a>
+                <a href="#" class="nav-item">📝 Рецензии на книги</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="page-title">КОРЗИНА</h1>
+            <div class="empty-cart">
+                <div class="empty-cart-icon">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                        <rect x="20" y="40" width="80" height="60" fill="#333" rx="4"/>
+                        <rect x="25" y="35" width="15" height="70" fill="#333" rx="2"/>
+                        <rect x="35" y="35" width="15" height="70" fill="#333" rx="2"/>
+                        <rect x="50" y="35" width="15" height="70" fill="#333" rx="2"/>
+                        <rect x="65" y="35" width="15" height="70" fill="#333" rx="2"/>
+                        <rect x="80" y="35" width="15" height="70" fill="#333" rx="2"/>
+                        <rect x="15" y="100" width="90" height="8" fill="#333" rx="4"/>
+                    </svg>
+                </div>
+                <h2 class="empty-cart-title">В корзине ничего нет</h2>
+                <p class="empty-cart-text">
+                    Воспользуйтесь поиском или перейдите<br>
+                    <a href="#" class="catalog-link">в каталог</a> чтобы найти интересные товары
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
