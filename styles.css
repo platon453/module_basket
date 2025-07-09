@@ -58,6 +58,7 @@ body {
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
+  margin-left: 40px;
 }
 
 .ratings-btn img {
@@ -126,12 +127,13 @@ body {
 }
 
 .nav {
-  background: white;
   display: flex;
   gap: 25px;
   padding: 12px 20px;
-  border-top: 1px solid #e9ecef;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center; /* Центрируем элементы навигации */
 }
 
 .nav-item {
@@ -1077,5 +1079,85 @@ body {
 
   .payment-options {
     grid-template-columns: 1fr;
+  }
+}
+
+/*изменения*/
+.header {
+  background: #1a1a1a; /* Переносим фон с header-top на header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav {
+  background: white;
+  display: flex;
+  gap: 25px;
+  padding: 12px 20px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: none; /* Убираем линию под хедером */
+}
+
+.search-container {
+  flex: 1;
+  max-width: 500px;
+  min-width: 200px; /* Чтобы не сжималась слишком сильно */
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    gap: 10px;
+  }
+  
+  .search-container {
+    order: 3;
+    flex: 1 0 100%;
+    margin-top: 10px;
+  }
+  
+  .user-actions {
+    margin-left: auto;
+  }
+}
+
+/* Новый контейнер для навигации */
+.nav-container {
+  background: white;
+  border-bottom: 1px solid #e9ecef; /* Добавим границу снизу вместо старой */
+}
+
+/* Улучшаем адаптивность */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start; /* На мобильных - выравниваем по левому краю */
+    padding: 12px 15px;
+  }
+  
+  .nav-item {
+    flex-shrink: 0; /* Предотвращаем сжатие элементов */
   }
 }
