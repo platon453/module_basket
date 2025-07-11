@@ -451,6 +451,19 @@ body {
   margin-top: 20px;
 }
 
+.go-to-checkout-btn {
+  width: 100%;
+  background: #4ecdc4;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+} 
+
 /* Checkout Styles */
 .breadcrumb {
   margin-bottom: 20px;
